@@ -10,4 +10,5 @@
 angular.module('scaredycatApp')
 	.controller('GameCtrl', function ($scope, userInfo) {
 		$scope.username = userInfo.getUsername();
+		$scope.card = 'bird2';
 	});
