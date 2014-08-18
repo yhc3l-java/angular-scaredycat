@@ -19,53 +19,53 @@
 	background-color: blue;
 	background-position:-150px 0px;
 }
-.bird3 {
+.card.bird3 {
 	background-color: pink;
 	background-position:-300px 0px;
 }
-.bird4 {
+.card.bird4 {
 	background-color: orange;
 	background-position:-450px 0px;
 }
-.bird5 {
+.card.bird5 {
 	background-color: purple;
 	background-position:-600px 0px;
 }
-.bird6 {
+.card.bird6 {
 	background-color: turquoise;
 	background-position:-750px 0px;
 }
-.back {
+.card.back {
 	background-color: green;
 	background-position:-900px 0px;
 }
-.cat1 {
+.card.cat1 {
 	background-position:-0px -200px;
 }
-.cat2 {
+.card.cat2 {
 	background-position:-150px -200px;
 }
-.cat3 {
+.card.cat3 {
 	background-position:-300px -200px;
 }
-.cat4 {
+.card.cat4 {
 	background-position:-450px -200px;
 }
-.scarecrow1 {
+.card.scarecrow1 {
 	background-position:0px -400px;
 }
-.scarecrow2 {
+.card.scarecrow2 {
 	background-position:-150px -400px;
 }
-.scarecrow3 {
+.card.scarecrow3 {
 	background-position:0px -600px;
 }
-.scarecrow4 {
+.card.scarecrow4 {
 	background-position:-150px -600px;
 }
-.scarecrow5 {
+.card.scarecrow5 {
 	background-position:0px -800px;
 }
-.scarecrow6 {
+.card.scarecrow6 {
 	background-position:-150px -800px;
 }
