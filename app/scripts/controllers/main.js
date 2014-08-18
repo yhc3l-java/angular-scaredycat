@@ -8,12 +8,12 @@
  * Controller of the scaredycatApp
  */
 angular.module('scaredycatApp')
-	.controller('MainCtrl', function ($scope) {
+	.controller('MainCtrl', function ($scope, $location, userInfo) {
 		$scope.user = '';
-		$scope.$watch('user', function (newValue, oldValue) {
+		$scope.$watch('user', function (newValue) {
 			if (newValue !== '') {
-				console.log('user');
-				console.log('redirect to /game');
+				userInfo.setUsername(newValue);
+				$location.path('/game');
 			}
 		});
 	});
