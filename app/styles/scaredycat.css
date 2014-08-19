@@ -1,5 +1,5 @@
 .card {
-	float:left;
+	float: left;
 	width: 150px;
 	height: 200px;
 	border: 1px black solid;
@@ -9,7 +9,6 @@
 	padding: 0;
 	margin:4px;
 	box-shadow: 5px 5px 5px #888888;
-	
 }
 .card.bird1 {
 	background-color: yellow;
@@ -68,4 +67,15 @@
 }
 .card.scarecrow6 {
 	background-position:-150px -800px;
+}
+.scarecrow-hand {
+	width: 310px;
+	height: 617px;
+	border: 1px black solid;
+}
+.scarecrow-card {
+	width: 154px;
+	height: 205px;
+	float: left;
+	background-color: yellow;
 }
