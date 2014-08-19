@@ -14,7 +14,7 @@ angular.module('scaredycatApp')
 			},
 			template: '<div class="scarecrow-hand">' +
 				'<div class="scarecrow-card">' +
-				'<sc-card card-type="\'scarecrow1\'" ng-show="showScarecrow(\'scarecrow1\"></sc-card>' +
+				'<sc-card card-type="\'scarecrow1\'" ng-show="showScarecrow(\'scarecrow1\')"></sc-card>' +
 				'</div>' +
 				'<div class="scarecrow-card">' +
 				'<sc-card card-type="\'scarecrow2\'" ng-show="showScarecrow(\'scarecrow2\')"></sc-card>' +
