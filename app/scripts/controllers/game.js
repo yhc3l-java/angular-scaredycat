@@ -14,8 +14,6 @@ angular.module('scaredycatApp')
 		$scope.username2 = 'Computer';
 		$scope.player1Cards = ['bird1', 'bird3', 'bird6'];
 		$scope.player2Cards = ['bird2', 'bird5', 'bird3'];*/
-		$scope.scarecrowCards = ['scarecrow1', 'scarecrow4', 'scarecrow5', 'scarecrow6'];
-		$scope.showScarecrow = function (scarecrow) {
-			return $scope.scarecrowCards.indexOf(scarecrow) > -1;
-		};
+		$scope.scarecrowCards = ['scarecrow1', 'scarecrow4', 'scarecrow5', 'scarecrow6', 'scarecrow2'];
+
 	});
