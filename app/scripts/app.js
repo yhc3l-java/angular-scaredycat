@@ -29,7 +29,15 @@ angular
       })
       .when('/results', {
         templateUrl: 'views/results.html',
-        controller: 'ResultsCtrl'
+        controller: 'ResultsCtrl',
+        resolve: {
+          highscores: function ($http) {
+            return $http.get('http://scaredycat.beta2.se/highscores')
+              .then(function (data) {
+                return data.data;
+              });
+          }
+        }
       })
       .otherwise({
         redirectTo: '/'
