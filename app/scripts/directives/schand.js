@@ -15,7 +15,7 @@ angular.module('scaredycatApp')
 			},
 			template: '<div>' +
 				'<h2>{{ playerName }}</h2>' +
-				'<div ng-repeat="card in cards">' +
+				'<div ng-repeat="card in cards track by $index">' +
 				'<sc-card card-type="card"></sc-card>' +
 				'</div>' +
 				'<div class="clearfix"></div>' +

@@ -12,12 +12,14 @@ angular.module('scaredycatApp')
     // Service logic
     // ...
     var cards = [],
-      bird1Count = 3,
-      bird2Count = 3,
-      bird3Count = 3,
-      bird4Count = 3,
-      bird5Count = 3,
-      bird6Count = 3;
+      bird1Count = 1,
+      bird2Count = 1,
+      bird3Count = 1,
+      bird4Count = 1,
+      bird5Count = 1,
+      bird6Count = 1;
+
+    window.cards = cards;
 
     function addBirds(birdname, count) {
       for (var i = 0; i < count; i = i + 1) {
@@ -42,7 +44,9 @@ angular.module('scaredycatApp')
         return cards.shift();
       },
       addCards: function (usersCards) {
-        cards.push(usersCards);
+        for (var i = 0; i < usersCards.length; i = i + 1) {
+          cards.push(usersCards[i]);
+        }
         cards = _.shuffle(cards);
       }
     };

@@ -1,9 +1,8 @@
-<p>This is the game view. {{ username }}</p>
-<!--<sc-hand cards="player1Cards" player-name="username1"></sc-hand>
-<sc-hand cards="player2Cards" player-name="username2"></sc-hand>
-<sc-deck selected-card="currentCard"></sc-deck>-->
-
-
+<sc-card card-type="selectedCard" ng-click="getNextCard()"></sc-card>
+<div class="clearfix"></div>
+<div ng-repeat="player in players">
+	<sc-hand  player-name="player.name" cards="player.hand"></sc-hand>
+</div>
 <sc-scarecrow-hand cards="scarecrowCards"></sc-scarecrow-hand>
-<sc-card card-type="card"></sc-card>
+
 
