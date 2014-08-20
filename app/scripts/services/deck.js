@@ -12,11 +12,11 @@ angular.module('scaredycatApp')
     // Service logic
     // ...
     var cards = [],
-      bird1Count = 1,
-      bird2Count = 0,
-      bird3Count = 0,
-      bird4Count = 1,
-      bird5Count = 0,
+      bird1Count = 3,
+      bird2Count = 3,
+      bird3Count = 3,
+      bird4Count = 3,
+      bird5Count = 3,
       bird6Count = 3;
 
     window.cards = cards;
@@ -28,7 +28,7 @@ angular.module('scaredycatApp')
     }
 
     cards.push('scarecrow1', 'scarecrow2', 'scarecrow3', 'scarecrow4', 'scarecrow5', 'scarecrow6');
-    cards.push('cat1' /*, 'cat2', 'cat3', 'cat4'*/ );
+    cards.push('cat1', 'cat2', 'cat3', 'cat4');
     addBirds('bird1', bird1Count);
     addBirds('bird2', bird2Count);
     addBirds('bird3', bird3Count);

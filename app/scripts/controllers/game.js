@@ -55,8 +55,11 @@ angular.module('scaredycatApp')
 				return $scope.scarecrowCards.length === 6;
 			};
 			$scope.saveScore = function () {
-				userInfo.setScore(calculateScore($scope.players[0].hand));
-				$location.path('/results');
+				userInfo.setScore(calculateScore($scope.players[0].hand))
+					.then(function () {
+						$location.path('/results');
+					});
+
 			};
 		}
 	});

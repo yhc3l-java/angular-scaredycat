@@ -25,7 +25,7 @@ angular.module('scaredycatApp')
       },
       setScore: function (score) {
         lastScore = score;
-        $http.put('http://scaredycat.beta2.se/highscores/' + username, {
+        return $http.put('http://scaredycat.beta2.se/highscores/' + username, {
           score: score
         });
       },
