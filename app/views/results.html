@@ -1,1 +1,6 @@
-<p>This is the results view.</p>
+<p>You scored {{ score }}</p>
+<table>
+	<tr ng-repeat="player in highscores">
+		<td>{{ player.name }}</td><td>{{ player.score }}</td>
+	</tr>
+</table>

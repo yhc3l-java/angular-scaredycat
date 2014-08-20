@@ -35,7 +35,9 @@ angular.module('scaredycatApp')
 			restrict: 'E',
 			controller: function ($scope) {
 				$scope.showScarecrow = function (scarecrow) {
-					return $scope.cards.indexOf(scarecrow) > -1;
+					if (angular.isDefined(scarecrow)) {
+						return $scope.cards.indexOf(scarecrow) > -1;
+					}
 				};
 
 			}
